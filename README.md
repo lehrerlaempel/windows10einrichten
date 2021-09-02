@@ -1,5 +1,6 @@
 # Tutorial: Wie man Windows 10 sicher einrichtet (Eine Anleitung)
 v 5.0 | Stand: September 2021 | Lizenz: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.de)
+
 Mehr Anleitungen gibt es [hier](https://lehrerlaempel.github.io/anleitungen/)!
 
 # Vorwort
