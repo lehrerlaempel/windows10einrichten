@@ -1,12 +1,12 @@
 # Tutorial: Wie man Windows 10 sicher einrichtet (Eine Anleitung)
 v 5.0 | Stand: September 2021 | Lizenz: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.de)
 
-Mehr Anleitungen gibt es [hier](https://lehrerlaempel.github.io/anleitungen/)!
+Weitere Anleitungen von uns findet man [hier](https://lehrerlaempel.github.io/anleitungen/)!
 
 # Vorwort
 Diese Anleitung soll dabei helfen, Windows 10 sicher einzurichten. Mit *sicher* ist dabei einerseits ein so datenschutzfreundliches und schwer anzugreifendes Windows wie möglich gemeint. Andererseits soll sich diese Anleitung auf Maßnahmen beschränken, die durchschnittliche Anwender:innen nicht überfordern und die alltägliche Benutzung des Systems möglichst wenig beeinflussen. Es geht hier also explizit nicht um ein möglichst gehärtetes System, sondern um so viel Sicherheit, wie ohne größere Einschränkungen "mit ein paar Mausklicks" eben möglich ist.
 
-*Für sicherheitsempfindliche Einsatzszenarien sollte ernsthaft über einen vollständigen Verzicht auf Windows nachgedacht und stattdessen ein Linux-Betriebssystem erwogen werden.*
+*Für sicherheitsempfindliche Einsatzszenarien sollte ernsthaft über einen vollständigen Verzicht auf Windows nachgedacht und stattdessen ein Linux-Betriebssystem erwogen werden. Zudem sollte in sensiblen Bereichen seriöse Hardware verwendet werden, die z.B. wie die Geräte von [Tuxedo](https://www.tuxedocomputers.com/) gut mit Linux zurechtkommt und auf freie Software setzen oder wie die [NitroPC und die NitroPads](https://shop.nitrokey.com/de_DE/shop) speziell gehärtet wurde. Für diese Anleitung gehen wir aber davon aus, dass Sie ein konventionelles Windows-Laptop verwenden, wie es sie in diversen Elektrofachmärkten zu kaufen gibt.*
 
 Es wird übrigens dringend empfohlen, die Anleitung in der hier beschriebenen Reihenfolge zu durchlaufen. Sofern Sie aber bereits vor einem installierten System sitzen und nicht alles neu aufsetzen können oder wollen, können Sie sich aber auch selbstverständlich einzelne Kapitel herauspicken. Lieber nur einzelne Maßnahmen dieser Anleitung umsetzen, als keine!
 
@@ -348,9 +348,11 @@ Sie sollten also alle paar Monate die folgenden Schritte durchführen, um sicher
 
 # 15 Das Kleingedruckte
 ## 15.1 Fehlerteufel
-Diese Anleitung wurde nach bestem Wissen und Gewissen erstellt. Wir haben die feste Absicht, diese im Laufe der Zeit an Änderungen der erwähnten Software anzupassen und um weitere Aspekte zu ergänzen.
+Diese Anleitung wurde von [lehrerlaempel](https://github.com/lehrerlaempel) nach bestem Wissen und Gewissen erstellt. Wir haben die feste Absicht, diese im Laufe der Zeit an Änderungen der erwähnten Software anzupassen und um weitere Aspekte zu ergänzen.
 
-Ihnen sind Fehler aufgefallen? Sie haben Verbesserungs- oder Änderungswünsche? Dann nehmen Sie gerne Kontakt mit uns auf. Wir sind für jedes Feedback dankbar!
+Ihnen sind Fehler aufgefallen? Sie haben Verbesserungs- oder Änderungswünsche? Dann nehmen Sie gerne [Kontakt](https://lehrerlaempel.github.io/anleitungen/) mit uns auf. Wir sind tatsächlich sehr an Ihrer Rückmeldung interessiert!
+
+Wir übernehmen explizit keinerlei Haftung für die hier getroffenen Aussagen oder möglicherweise daraus entstandene Datenverluste oder Schäden am Gerät. Wir haben diese Texte nach bestem Wissen und Gewissen verfasst, sind aber wie alle Menschen fehlbar.
 
 ## 15.2 Lizenz
 Dieser Text steht unter einer CC-Lizenz, ist also quasi schöpferisches Gemeingut.
