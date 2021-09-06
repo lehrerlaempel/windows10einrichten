@@ -1,5 +1,5 @@
 # Tutorial: Wie man Windows 10 sicher einrichtet (Eine Anleitung)
-v 5.0 | Stand: September 2021 | Lizenz: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.de)
+v 5.1 | Stand: September 2021 | Lizenz: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.de)
 
 Weitere Anleitungen von uns findet man [hier](https://lehrerlaempel.github.io/anleitungen/)!
 
@@ -184,6 +184,8 @@ Leider ist das unter Windows nicht ganz einfach. Fürs erste möchten wir daher 
 Browser sind ein zweischneidiges Schwert. Einerseits meist das Tor zu Welt und wichtiges Arbeitsmittel, andererseits aber auch eines der Haupteinfalltore für Angriffe und Schadsoftware. Es lohnt sich also, sich kurz über Auswahl und Konfiguration der verwendeten Browser Gedanken zu machen.
 
 Anbei finden Sie einen Vorschlag für die Nutzung des TorBrowsers und als Ergänzung einen Mozilla Firefox. 
+
+Übrigens: Browser sind als DIE Schnittstelle zum Internet auch ein interessantes Werkzeug, um Sie online zu identifizieren. Dabei werden heute neben Cookies auch diverse andere Merkmale herangezogen. Testen Sie doch einfach mal nach der Einrichtung von TorBrowser und Firefox zum Beispiel [hier](https://schemeflood.com/) oder [hier](https://coveryourtracks.eff.org/), welcher von beiden besser abschneidet.
 
 ### 11.1.1 TorBrowser
 Als primären Browser empfiehlt es sich, den [TorBrowser](https://www.torproject.org/de/download/) zu verwenden, um beim Surfen möglichst wenig Spuren zu hinterlassen. Mehr zum Browser findet man zum Beispiel [hier](https://support.torproject.org/de/) oder [hier](https://www.heise.de/tipps-tricks/Der-Tor-Browser-Unzensiert-im-Darknet-surfen-3853797.html).
