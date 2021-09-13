@@ -1,5 +1,5 @@
 # Tutorial: Wie man Windows 10 sicher einrichtet (Eine Anleitung)
-v 5.1 | Stand: September 2021 | Lizenz: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.de)
+v 6.0 | Stand: September 2021 | Lizenz: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.de)
 
 Weitere Anleitungen von uns findet man [hier](https://lehrerlaempel.github.io/anleitungen/)!
 
@@ -176,9 +176,15 @@ Mehr dazu in unserer separaten Anleitung zu diesem Thema: [Wie man Virtuelle Mas
 # 11 Software installieren
 Nun ist an an der Zeit, die zum Verwenden des Laptops benötigte Software zu installieren. *(Wir bewegen uns ab jetzt also entweder in einem Windows-Konto ohne Adminrechte oder in einer Virtuellen Maschine!)* Wann immer möglich, sollte man dabei auf [Freie Software](https://fsfe.org/freesoftware/freesoftware.de.html) zurückgreifen.
 
-Eigentlich wäre es wichtig, Software zu überprüfen, bevor Sie diese Installieren. Unter Linux oder in AppStores auf dem Smartphone wird Ihnen das abgenommen. Unter Windows hingegen haben Sie das Problem, dass es keinen automatisch integrierten Mechanismus gibt, der sicherstellt, dass die von Ihnen heruntergeladene *irgendeinesoftware.exe* auch tatsächlich nur das vom Hersteller gebaute Programm enthält. Wer sagt Ihnen denn, dass die Datei nicht von Angreifer:innen auf dem Server oder dem Weg durchs Netz zu Ihnen manipuliert wurde? 
+Eigentlich wäre es wichtig, Software zu überprüfen, bevor Sie diese Installieren. Unter Linux oder in AppStores auf dem Smartphone wird Ihnen das abgenommen. Unter Windows hingegen haben Sie das Problem, dass es keinen automatisch integrierten Mechanismus gibt, der sicherstellt, dass die von Ihnen heruntergeladene *irgendeinesoftware.exe* auch tatsächlich nur das vom Hersteller gebaute Programm enthält. Wer sagt Ihnen denn, dass die Datei nicht von Angreifer:innen auf dem Server oder dem Weg durchs Netz zu Ihnen manipuliert wurde? Wer sagt Ihnen eigentlich, dass in der Datei *firefox.exe* tatsächlich nur ein Browser und kein Trojaner steckt?
 
-Leider ist das unter Windows nicht ganz einfach. Fürs erste möchten wir daher auf [diese](https://roastedonion.wordpress.com/how-to/check-signatures/signatur-prufen/) Anleitung verweisen. Eine Anleitung von uns zu dem Thema folgt ggf. später.
+Leider ist das unter Windows bisher nicht ganz einfach. Fürs erste möchten wir daher auf [diese](https://roastedonion.wordpress.com/how-to/check-signatures/signatur-prufen/) Anleitung verweisen.
+
+...doch vielleicht gibt es Licht am Ende des Tunnels: Mit dem **Windows Package Manager (winget)** gibt es seit Anfang 2021 ein Kommandozeilenprogramm, mit dem auch in Windows zentral über das Terminal Software installiert und - fast noch wichtiger - vor der Installation überprüft und später zentral geupdatet werden kann. Auch kann man so die Installation von viel Software sehr bequem automatisieren.
+
+Wer keine Lust auf Kommandozeile hat, ignoriert das einfach und installiert sich Software ganz klassich über den Download der Installer von den Webseiten der Hersteller. Man sollte sich dann halt ernsthaft überlegen, ob man nicht wenigstens die Hash-Werte der Downloads überprüfen sollte. 
+
+Allen anderen sei Kapitel **13.4 Windows Package Manager "winget"** dieser Anleitung wärmstens empfohlen :-)
 
 ## 11.1 WebBrowser
 Browser sind ein zweischneidiges Schwert. Einerseits meist das Tor zu Welt und wichtiges Arbeitsmittel, andererseits aber auch eines der Haupteinfalltore für Angriffe und Schadsoftware. Es lohnt sich also, sich kurz über Auswahl und Konfiguration der verwendeten Browser Gedanken zu machen.
@@ -234,6 +240,7 @@ Wer etwas Geduld für die Einrichtung und einen hohen Schutzbedarf hat, kann sic
 - [NoScript](https://addons.mozilla.org/de/firefox/addon/noscript/) schützt Sie vor unerwünschten aktiven Inhalten wie JavaScript, Flash oder Java, die häufig für das Ausbringen von Schadsoftware genutzt werden.
 - [UserAgent-Switcher](https://addons.mozilla.org/en-US/firefox/addon/user-agent-string-switcher/) verändert den User-Agent und verschleiert so, welches Betriebssystem und welchen Browser Sie verwenden
 
+Das sollte für die meisten Nutzer:innen genug des Guten sein. Wer seinen Browser noch weiter härten möchte, findet [hier](https://www.torbox.ch/?page_id=112) im oberen Drittel der Seite sowohl Anregungen für weitere Add-ons als auch weiterführende Möglichkeiten, Firefox zu konfigurieren.
 
 ## 11.2 E-Mail-Client
 Sofern E-Mails auf Ihrem Computer nicht über den Browser abgerufen werden sollen, empfiehlt sich die Installation von [Thunderbird](https://www.thunderbird.net/de/), um Mails automatisch abrufen und auch offline verarbeiten zu können. Mit der aktuellen Version von Thunderbird wird auch das sichere Verschlüsseln von E-Mails zum Kinderspiel, aber dazu mehr in unserer Anleitung [Wie man eine sichere E-Mailverschlüsselung einfach einrichtet](https://lehrerlaempel.github.io/emailverschluesselung/).
@@ -329,6 +336,20 @@ Machen Sie noch einen Rechtsklick auf eine leere Stelle der Taskleiste und wähl
 
 Machen Sie vor allgen größeren Systemänderungen solche Wiederherstellungspunkte. Über die Schaltfläche *Systemwiederherstellung* auf der selben Menüseite können Sie so später jederzeit Ihr System (nicht die Nutzer:innen-Daten, nur das Betriebssystem) auf einen früheren Zustand zurücksetzen. Das spart oft viel Reparaturarbeit, manchmal sogar eine Neuinstallation des Systems.
 
+## 13.4 Windows Package Manager "winget"
+Hier ein paar Worte zum [Windows Package Manager "winget"](https://docs.microsoft.com/de-de/windows/package-manager/winget/) von Microsoft. Zum Start einfach mit der rechten Maustaste auf das Windows-Logo und dann auf *Windows PowerShell (Administrator)* gehen. In dem sich nun folgenden Fenster kann man mit folgenden Befehlen spielen:
+
+- **winget install --id=exakteProgrammID  -e** installiert eine Software. Eine gute Übersicht der verfügbaren Programme und deren genaue Bezeichnung findet man auf [Winstall.app](https://winstall.app/apps). Einfach in das Suchfeld den Namen der gewünschten Software eingeben. Nach einem Klick auf die Software kommt dann eine Übersichtsseite, auf der sich auch der Befehl für die Installation findet.
+- **winget list** erzeugt eine Liste der installierten Software inkl. exakter Versionsbezeichnung. Sind neuere Versionen in winget verfügbar, wird dies dahinter angezeigt.
+- **winget upgrade ID** kann ein einzelnes Programm geupdatet werden, zu dem eine neue Version vorliegt. Dazu einfach *ID* durch die in der Liste oben aufgeführte ID ersetzen, also z.B. *winget upgrade Mozilla.Thunderbird*.
+- **winget upgrade --all** installiert alle verfügbaren Updates.
+
+Die Seite **[Winstall.app](https://winstall.app/apps)** bietet übrigens auch eine weitere interessante Funktion: Durch das klicken auf das Plus-Symbol kann man Software quasi in einen Warenkorb legen. Hat man alles benötigte ausgewählt, klickt man unten auf *Generate script*. Die Seite erstellt dann einen Befehl, der alle ausgewählten Programme nacheinander installiert. Über *Copy to clipboard* kann dieser in die Zwischenablage kopiert und in die PowerShell eingefügt werden. Alternativ kann man auch eine bat-Datei herunterladen, die nach einem Doppelklick die ausgewählten Programme installiert. Das spart viel Zeit und Nerven, die man sonst benötigt hätte, von Hand diverse Programme erst zu verifizieren, um sich dann durch das Installationsmenü zu klicken. Der Seite muss man übrigens nicht blind vertrauen: Der Syntax der Datei ist nahezu selbsterklärend: Ein Klick auf die Datei vor dem Ausführen mit der rechten Maustaste, dann *Bearbeiten* auswählen und schon kann man kontrollieren, was da gleich ausgeführt werden soll.
+
+Übrigens: Bei der Installtion erscheint dann immer auch die Zeile *Der Installer-Hash wurde erfolgreich überprüft*. Alleine dafür lohnt es sich, einen Blick auf winget zu werfen. Alternativ müsste man nämlich von jeder einzelnen heruntergeladenen Exe den Hashwert und die kryptographische Signatur eigenständig prüfen. Und mal Hand aufs Herz: Wer macht das schon...
+
+Falls winget auf Ihrem System noch nicht installiert ist und die oben erwähnten Befehel nur rote **Fehlermeldungen** aussprucken: [Hier](https://github.com/microsoft/winget-cli/releases) findet man auf GitHub die neuste Version des Tools. Einfach von der neusten Version die Datei *Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.msixbundle* (oder so ähnlich) herunterladen und installieren. Danach müsste das funktionieren.
+
 - - - -
 
 ***Herzlichen Glückwunsch, Sie haben es geschafft!***
@@ -346,7 +367,7 @@ Sie sollten also alle paar Monate die folgenden Schritte durchführen, um sicher
 - Windows-Symbol drücken und nach *WLAN-Einstellungen* suchen. In dem sich öffnenden Fenster unter *Bekannte Netzwerke verwalten* alle Netzwerke löschen, die auf Orte/Lokalitäten hindeuten, mit denen Sie nicht in Verbindung gebracht werden möchten.
 - Prüfen, ob es verfügbare aber noch nicht automatisch installierte Windows-Updates gibt.
 - Mit einer aktuellen Version des verwendeten Tools zum entfernen unerwünschter Funktionalität prüfen, ob z.B. durch Updates unerwünschte Features wieder aktiviert wurden.
-- Prüfen Sie die auf Ihrem System installierte Software regelmäßig auf Updates! Anders als z.B. meist unter Android oder Linux werden Ihre Programme von Windows 10 nicht automatisch aktualisiert!
+- Prüfen Sie die auf Ihrem System installierte Software regelmäßig auf Updates! Anders als z.B. meist unter Android oder Linux werden Ihre Programme von Windows 10 nicht automatisch aktualisiert! (Allerdings kann Ihnen der Terminalbefehl *winget list* immerhin eine gute Übersicht der installierten Programmversionen anbieten und *winget upgrade --all* wenigstens einen Teil davon aktualisieren.)
 
 # 15 Das Kleingedruckte
 ## 15.1 Fehlerteufel
@@ -380,7 +401,3 @@ Hinweise:
 Bitte erlauben Sie uns auch noch ein paar Wörter zu den auf dieser Seite gesetzten Links, wie sie von [eRecht24](https://www.e-recht24.de/muster-disclaimer.html) empfohlen werden:
 
 Unser Angebot enthält Links zu externen Websites Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar. Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Links umgehend entfernen.
-
-# 16 Ausblick/ToDo
-Die folgenden Punkte sollen zukünftig noch in dieser Anleitung ergänzt werden:
-- Ungefähre Dauer für das Durchführen einzelner Kapitel angeben
