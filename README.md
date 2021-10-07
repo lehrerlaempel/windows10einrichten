@@ -1,5 +1,5 @@
 # Tutorial: Wie man Windows 10 sicher einrichtet (Eine Anleitung)
-v 6.0 | Stand: September 2021 | Lizenz: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.de)
+v 6.1 | Stand: Oktober 2021 | Lizenz: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.de)
 
 Weitere Anleitungen von uns findet man [hier](https://lehrerlaempel.github.io/anleitungen/)!
 
@@ -88,6 +88,8 @@ Erfahrene Nutzer:innen können hier "von Hand" z.B. anhand der Anleitungen des [
 Das schöne an *O&O ShutUp10* ist, dass ihnen jede einzelne Option ausführlich und für Laien verständlich erklärt wird! Klicken Sie dazu einfach auf den entsprechenden Eintrag. Das Tool blendet dann eine kurze verständliche Erklärung ein.
 
 Alternativ kann auch eines der zahlreich weiteren vorhandenen Tools wie z.B. [W10Privacy](https://www.w10privacy.de/) für diesen Zweck verwendet werden. Bitte achten Sie jedoch darauf, für diese wichtige Aufgabe ein seriöses Programm aus vertrauenswürdiger Quelle zu verwenden!
+
+Fortgeschrittenen Nutzer:innen sollten sich unbedingt auch [privacy.sexy](https://privacy.sexy/) anschauen. Das ist eine Skript-Sammlung für Windows und macOS, um die Privatsphäre und Sicherheit zu verbessern. [Hier](https://social.tchncs.de/@kuketzblog/107052937606967144) wird das Tool beschrieben als: "Nachvollziehbar und keines dieser 1xClick-Tools, bei denen man nicht weiß, was sie machen."
 
 ## 5.2 W-LAN und Bluetooth
 Ganz grundsätzlich sollten Sie auch Bluetooth und WLAN deaktivieren, sofern Sie diese nicht nutzen.
@@ -401,3 +403,4 @@ Hinweise:
 Bitte erlauben Sie uns auch noch ein paar Wörter zu den auf dieser Seite gesetzten Links, wie sie von [eRecht24](https://www.e-recht24.de/muster-disclaimer.html) empfohlen werden:
 
 Unser Angebot enthält Links zu externen Websites Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar. Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Links umgehend entfernen.
+
