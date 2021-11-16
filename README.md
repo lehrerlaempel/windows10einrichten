@@ -1,7 +1,9 @@
 # Tutorial: Wie man Windows 10 sicher einrichtet (Eine Anleitung)
-v 6.1 | Stand: Oktober 2021 | Lizenz: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.de)
+v 6.2 | Stand: November 2021 | Lizenz: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.de)
 
 Weitere Anleitungen von uns findet man [hier](https://lehrerlaempel.github.io/anleitungen/)!
+
+**Diese Anleitung ist in großen Teilen 1:1 auf Windows 11 übertragbar. Sobald wir mit ein paar noch ausstehenden Tests fertig sind, werden wir eine Anleitung für Windows 11 erstellen und dieses Dokument hier archivieren.**
 
 # Vorwort
 Diese Anleitung soll dabei helfen, Windows 10 sicher einzurichten. Mit *sicher* ist dabei einerseits ein so datenschutzfreundliches und schwer anzugreifendes Windows wie möglich gemeint. Andererseits soll sich diese Anleitung auf Maßnahmen beschränken, die durchschnittliche Anwender:innen nicht überfordern und die alltägliche Benutzung des Systems möglichst wenig beeinflussen. Es geht hier also explizit nicht um ein möglichst gehärtetes System, sondern um so viel Sicherheit, wie ohne größere Einschränkungen "mit ein paar Mausklicks" eben möglich ist.
@@ -10,7 +12,7 @@ Diese Anleitung soll dabei helfen, Windows 10 sicher einzurichten. Mit *sicher* 
 
 Es wird übrigens dringend empfohlen, die Anleitung in der hier beschriebenen Reihenfolge zu durchlaufen. Sofern Sie aber bereits vor einem installierten System sitzen und nicht alles neu aufsetzen können oder wollen, können Sie sich aber auch selbstverständlich einzelne Kapitel herauspicken. Lieber nur einzelne Maßnahmen dieser Anleitung umsetzen, als keine!
 
-Ihre Daten sollten Sie übrigens erst auf das Gerät kopieren bzw. mit dem Computer erst arbeiten, wenn Sie diese Anleitung vollständig durchlaufen habe, um die Sicherheit Ihrer Daten nicht zu gefährden.
+Ihre Daten sollten Sie übrigens erst auf das Gerät kopieren bzw. mit dem Computer erst arbeiten, wenn Sie diese Anleitung vollständig durchlaufen haben, um die Sicherheit Ihrer Daten nicht zu gefährden.
 
 Ein letztes Wort, bevor es endlich losgeht: Diese Anleitung beinhaltet lediglich allgemeine Empfehlungen. Es kann durchaus sein, dass diese Anleitung Fehler enthält oder aufgrund anderer Soft-/Hardware einige Punkte auf Ihrem System anders heißen. Haben Sie Mut, Ihr System selbst einzurichten. Wir möchten Sie mit dieser Anleitung dabei unterstützen. Aber zögern Sie bei Fragen bitte nie, sich im Internet oder bei fachkundigen Personen aus Ihrem Umfeld Hilfe zu holen.
 
@@ -231,6 +233,8 @@ Im Menü **Datenschutz und Sicherheit**:
 Im Menü **Sync**:
 - Sofern Sie darauf verzichen können, melden Sie sich bitte nicht mit einem Firefox Konto an bzw. erstellen Sie kein solches.
 
+Wer noch einen Schritt weiter gehen möchte, findet u.a. [hier](https://www.kuketz-blog.de/mozilla-firefox-datensendeverhalten-desktop-version-browser-check-teil20/) eine interessante Anleitung, wie man in den etwas versteckten [*about:config*](https://support.mozilla.org/de/kb/konfigurationseditor-fur-firefox) Einstellungen Firefox noch weiter härten kann.
+
 #### 11.1.2.2 Add-ons
 Durch das Installieren von Add-ons können Sie Ihrem Browser weiteren Schutz hinzufügen und das Surfen bequemer gestalten. Aber Achtung: Die Add-ons haben Zugriff auf das, was Sie im Browser machen. Sie sollten also nur vertrauenswürdige Programme installieren.
 
@@ -240,7 +244,6 @@ Zur Installation von Add-ons klicken Sie bitte in Ihrem Firefox-Browser auf die 
 
 Wer etwas Geduld für die Einrichtung und einen hohen Schutzbedarf hat, kann sich noch die folgenden zwei Add-ons anschauen:
 - [NoScript](https://addons.mozilla.org/de/firefox/addon/noscript/) schützt Sie vor unerwünschten aktiven Inhalten wie JavaScript, Flash oder Java, die häufig für das Ausbringen von Schadsoftware genutzt werden.
-- [UserAgent-Switcher](https://addons.mozilla.org/en-US/firefox/addon/user-agent-string-switcher/) verändert den User-Agent und verschleiert so, welches Betriebssystem und welchen Browser Sie verwenden
 
 Das sollte für die meisten Nutzer:innen genug des Guten sein. Wer seinen Browser noch weiter härten möchte, findet [hier](https://www.torbox.ch/?page_id=112) im oberen Drittel der Seite sowohl Anregungen für weitere Add-ons als auch weiterführende Möglichkeiten, Firefox zu konfigurieren.
 
@@ -373,11 +376,13 @@ Sie sollten also alle paar Monate die folgenden Schritte durchführen, um sicher
 
 # 15 Das Kleingedruckte
 ## 15.1 Fehlerteufel
-Diese Anleitung wurde von [lehrerlaempel](https://github.com/lehrerlaempel) nach bestem Wissen und Gewissen erstellt. Wir haben die feste Absicht, diese im Laufe der Zeit an Änderungen der erwähnten Software anzupassen und um weitere Aspekte zu ergänzen.
+Diese Anleitung wurde von [lehrerlaempel](https://github.com/lehrerlaempel) nach bestem Wissen und Gewissen erstellt. Wir haben die feste Absicht, diese im Laufe der Zeit an Änderungen der erwähnten Software anzupassen und um weitere Aspekte zu ergänzen. Den Stand der Ihnen vorliegenden Version finden Sie ganz am Anfang der Seite.
 
 Ihnen sind Fehler aufgefallen? Sie haben Verbesserungs- oder Änderungswünsche? Dann nehmen Sie gerne [Kontakt](https://lehrerlaempel.github.io/anleitungen/) mit uns auf. Wir sind tatsächlich sehr an Ihrer Rückmeldung interessiert!
 
-Wir übernehmen explizit keinerlei Haftung für die hier getroffenen Aussagen oder möglicherweise daraus entstandene Datenverluste oder Schäden am Gerät. Wir haben diese Texte nach bestem Wissen und Gewissen verfasst, sind aber wie alle Menschen fehlbar.
+Im Rahmen unserer Möglichkeiten haben wir auch versucht sicherzustellen, dass sowohl diese Seite selbst, als auch die von uns verlinkten Seiten sowohl legaler als auch legitimer Natur sind. Sollten uns Fehler unterlaufen sein oder wir änderungen verlinkter Seiten verpasst haben, geben Sie und gerne ein Zeichen, damit wir das zeitnah beheben können.
+
+Wir übernehmen explizit keinerlei Haftung für die hier getroffenen Aussagen oder möglicherweise daraus entstandene Datenverluste oder sonstigen Schäden. Wir haben diese Texte nach bestem Wissen und Gewissen verfasst, sind aber wie alle Menschen fehlbar. Verstehen Sie diese Anleitungen also bitte als aufrichtig wohlmeindende Ratschläge auf Augenhöhe, jedoch ohne jede Gewähr.
 
 ## 15.2 Lizenz
 Dieser Text steht unter einer CC-Lizenz, ist also quasi schöpferisches Gemeingut.
@@ -399,8 +404,4 @@ Hinweise:
 
 *Dies war eine allgemeinverständliche Zusammenfassung der [Lizenz](https://creativecommons.org/licenses/by-sa/4.0/legalcode.de), die diese nicht ersetzt.*
 
-## 15.3 Externe Links
-Bitte erlauben Sie uns auch noch ein paar Wörter zu den auf dieser Seite gesetzten Links, wie sie von [eRecht24](https://www.e-recht24.de/muster-disclaimer.html) empfohlen werden:
-
-Unser Angebot enthält Links zu externen Websites Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar. Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Links umgehend entfernen.
 
