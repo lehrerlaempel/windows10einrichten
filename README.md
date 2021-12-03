@@ -1,5 +1,5 @@
 # Tutorial: Wie man Windows 10 sicher einrichtet (Eine Anleitung)
-v 6.2 | Stand: November 2021 | Lizenz: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.de)
+v 6.3 | Stand: Dezember 2021 | Lizenz: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.de)
 
 Weitere Anleitungen von uns findet man [hier](https://lehrerlaempel.github.io/anleitungen/)!
 
@@ -135,7 +135,7 @@ Aber keine Sorge: Dank [VeraCrypt](https://www.veracrypt.fr/en/Downloads.html) (
 
 Installieren Sie sich zunächst VeraCrypt und verschlüsseln Sie dann mit diesem alle Ihre Festplatten. Anleitungen dazu finden Sie im Netz zuhauf, z.B. [hier](https://it-learner.de/das-betriebssystemlaufwerk-c-mittels-der-bitlocker-alternative-veracrypt-verschluesseln/) oder [hier](https://www.howtogeek.com/howto/6169/use-truecrypt-to-secure-your-data/).
 
-# 9 Lauschabwehr
+# 9 Der Feind hört mit!?
 ## 9.1 Physischer Schutz
 Verfügt Ihr Computer über eine eingebaute Webcam, sollte diese bei Nichtgebrauch immer mit einer Abdeckung oder einem blickdichten Aufkleber versehen werden.
 
@@ -403,5 +403,3 @@ Hinweise:
 - Es werden keine Garantien gegeben und auch keine Gewähr geleistet. Die Lizenz verschafft Ihnen möglicherweise nicht alle Erlaubnisse, die Sie für die jeweilige Nutzung brauchen. Es können beispielsweise andere Rechte wie Persönlichkeits- und Datenschutzrechte zu beachten sein, die Ihre Nutzung des Materials entsprechend beschränken.
 
 *Dies war eine allgemeinverständliche Zusammenfassung der [Lizenz](https://creativecommons.org/licenses/by-sa/4.0/legalcode.de), die diese nicht ersetzt.*
-
-
